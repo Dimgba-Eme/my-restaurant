@@ -107,12 +107,10 @@
 
 .section-container {
   background-color: $Primary-color1;
-  border: 1px solid red;
   padding: 20px 10px;
-  
+
   .hero-section {
-    border: 1px solid blue;
-    
+
     .hero-inner {
       display: flex;
 
@@ -121,25 +119,33 @@
         font-family: serif;
         font-weight: bold;
         font-size: 35px;
+        color: $Primary-color2;
       }
 
       h2 {
         font-size: 20px;
         font-family: serif;
+        color: $secondary-color3;
 
       }
 
       p {
-        border: 1px solid green;
         margin-right: 30px;
         font-size: 15px;
         margin-top: 10px;
+        color: $secondary-color3;
+
       }
 
       button {
         margin-top: 20px;
         padding: 10px;
         border-radius: 15px;
+        background-color: $Primary-color2;
+        color: $secondary-color4;
+        font-weight: bold;
+        border: 0;
+
       }
 
       .hero-image {
@@ -150,6 +156,76 @@
         margin-top: 75px;
         border-radius: 10px;
 
+      }
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    padding: 20px 30px;
+
+    .hero-section {
+
+
+      .hero-inner {
+
+        h1 {
+          font-size: 50px;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 20px;
+          margin-right: 420px;
+        }
+
+        button {
+          margin-top: 40px;
+        }
+
+        .hero-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 40%;
+          height: 60vh;
+          margin-right: 40px;
+          margin-top: 150px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .hero-section {
+
+      .hero-inner {
+        h1 {
+          font-size: 64px;
+        }
+
+        h2 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 25px;
+          margin-top: 20px;
+          margin-right: 900px;
+        }
+
+        button {
+          padding: 20px;
+        }
+
+        .hero-image {
+          height: 80vh;
+          margin-top: 200px;
+          margin-right: 50px;
+        }
       }
     }
   }

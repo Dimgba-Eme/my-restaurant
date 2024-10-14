@@ -5,9 +5,9 @@ function HomeMain() {
   return (
     <>
       <div className='section-container'>
+
         <section className='hero-section'>
           <div className='hero-inner'>
-
             <div className='intro-container'>
               <h1>Little Lemon</h1>
               <h2>Chicago</h2>
@@ -18,10 +18,10 @@ function HomeMain() {
                 twist. </p>
               <button>Reserve a table</button>
             </div>
-
-            <img src={HeroImage} className='hero-image' alt='Hero image' />
+            <img src={HeroImage} className='hero-image' alt='Hero pic' />
           </div>
         </section>
+
       </div>
     </>
   )
