@@ -52,8 +52,8 @@
     }
   }
 
-  @media only screen and (min-width: 1000px) {
 
+  @media only screen and (min-width: 1000px) {
     display: flex;
     align-items: center;
     padding: 30px 70px;
@@ -183,14 +183,16 @@
 
         button {
           margin-top: 40px;
+          padding: 20px;
         }
 
         .hero-image {
           position: absolute;
+          z-index: 100;
           top: 0;
           right: 0;
           width: 40%;
-          height: 60vh;
+          height: 65vh;
           margin-right: 40px;
           margin-top: 150px;
           border-radius: 20px;
@@ -200,6 +202,7 @@
   }
 
   @media only screen and (min-width: 1000px) {
+    padding: 30px 70px;
     .hero-section {
 
       .hero-inner {
@@ -214,7 +217,7 @@
         p {
           font-size: 25px;
           margin-top: 20px;
-          margin-right: 900px;
+          margin-right: 800px;
         }
 
         button {
@@ -224,7 +227,6 @@
         .hero-image {
           height: 80vh;
           margin-top: 200px;
-          margin-right: 50px;
         }
       }
     }
