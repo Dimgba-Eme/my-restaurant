@@ -4,3 +4,39 @@
   box-sizing: border-box;
 }
 
+.page-header {
+  border: 1px solid blue;
+  display: flex;
+  padding: 30px 100px;
+  align-items: center;
+
+  .logo {
+    border: 1px solid red;
+    width: 250px;
+  }
+
+  .navBar {
+    border: 1px solid black;
+    margin-left: auto;
+
+
+    .list-container {
+      border: 1px solid green;
+      display: flex;
+
+      li {
+        font-size: 24px;
+        margin-left: 15px;
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: #333333;
+
+        }
+
+      }
+
+    }
+  }
+}
