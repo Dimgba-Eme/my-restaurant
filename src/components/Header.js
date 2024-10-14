@@ -1,11 +1,12 @@
 import React from 'react'
-import NavBar from './NavBar'
+import NavBar from './NavBar';
+import Logo from '../assets/images/lemon logo.jpg';
 
 function Header() {
   return (
     <>
      <header className='page-header'>
-        <h1>Hello World</h1>
+        <img src={Logo} className='logo' alt='brand logo' />
         <NavBar />
     </header> 
     </>
