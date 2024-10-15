@@ -42,12 +42,12 @@
 
       .logo {
         width: 250px;
-        margin-left: 150px;
+        margin-left: 140px;
       }
 
       .basket {
         width: 50px;
-        margin-left: 150px;
+        margin-left: 140px;
       }
     }
   }
@@ -162,6 +162,7 @@
 
   @media only screen and (min-width: 700px) {
     padding: 20px 30px;
+    position: relative;
 
     .hero-section {
 
@@ -188,13 +189,12 @@
 
         .hero-image {
           position: absolute;
-          z-index: 100;
           top: 0;
           right: 0;
           width: 40%;
           height: 65vh;
           margin-right: 40px;
-          margin-top: 150px;
+          margin-top: 40px;
           border-radius: 20px;
         }
       }
@@ -227,7 +227,8 @@
 
         .hero-image {
           height: 80vh;
-          margin-top: 200px;
+          margin-top: 50px;
+          margin-right: 50px;
         }
       }
     }
@@ -236,16 +237,17 @@
 
 .mobile-specials {
   padding: 20px 10px;
-  
+
   .order-mobile {
     h3 {
       font-weight: bolder;
     }
-    
+
     .button-container {
       display: flex;
       overflow: auto;
       padding: 20px 0px;
+
       button {
         padding: 10px;
         border-radius: 15px;
@@ -253,36 +255,38 @@
         min-width: 90px;
         color: $secondary-color4;
         font-weight: bold;
+
         &:focus {
           background-color: $Primary-color1;
           color: $secondary-color3;
         }
       }
-      
-      button + button {
+
+      button+button {
         margin-left: 10px;
       }
-      
+
     }
-    
-    
-    
+
+
+
   }
-  
+
   .mobile-menu-container {
-    
-    
+
+
     .foods {
       .food-one-container {
         border-bottom: 1px solid $secondary-color4;
         padding: 20px 0;
         display: flex;
+
         .food-one-intro {
           h4 {
             color: $secondary-color4;
             font-weight: bold;
           }
-          
+
           .food-description {
             font-size: 12px;
             color: $Primary-color1;
@@ -303,4 +307,132 @@
       }
     }
   }
+
+  @media only screen and (min-width:700px) {
+    .mobile-menu-container {
+
+      padding-top: 50px;
+
+      .order-mobile {
+        h3 {
+          font-size: 35px;
+        }
+      }
+
+      .foods {
+        .food-one-container {
+          .food-one-intro {
+            h4 {
+              font-size: 25px;
+            }
+
+            .food-description {
+              margin-right: 100px;
+              font-size: 20px;
+              padding: 20px 0;
+            }
+
+            .price {
+              font-size: 20px;
+              margin-top: 20px;
+            }
+          }
+
+          .meals {
+            min-width: 50%;
+          }
+
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width:1000px) {
+    display: none;
+  }
+}
+
+.desktop-specials {
+  display: none;
+
+  @media only screen and (min-width:1000px) {
+    display: block;
+    padding: 150px 70px;
+
+    .alert {
+      display: flex;
+
+      h1 {
+        font-size: 64px;
+        font-family: serif;
+        color: $secondary-color4;
+      }
+
+      button {
+        background-color: $Primary-color2;
+        color: $secondary-color4;
+        width: 150px;
+        height: 10vh;
+        border: 0;
+        border-radius: 15px;
+        font-weight: bolder;
+        margin-left: auto;
+      }
+    }
+
+    .desktop-menu-container {
+      display: flex;
+      padding-top: 100px;
+
+      .foods {
+        background-color: $secondary-color3;
+        margin-left: 20px;
+
+        .food-intro {
+          .dishes {
+            width: 355px;
+            height: 250px;
+          }
+
+          h4 {
+            font-size: 30px;
+            padding-top: 20px;
+            padding-left: 20px;
+          }
+
+          .description {
+            font-size: 20px;
+            padding: 30px 0;
+            padding-left: 20px;
+            padding-right: 60px;
+            color: $Primary-color1;
+          }
+
+          .prices {
+            margin-left: 50px;
+            font-size: 20px;
+            color: $secondary-color1;
+          }
+           .order-container {
+            display: flex;
+            align-items: center;
+             .order {
+              padding-left: 20px;
+               padding-bottom: 30px;
+               font-weight: 500;
+               color: $secondary-color4;
+             }
+
+             .bicycle {
+              width: 30px;
+              margin-left: 30px;
+              padding-bottom: 30px;
+             }
+
+           }
+        }
+      }
+    }
+  }
+
 }
