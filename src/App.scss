@@ -77,26 +77,20 @@
     .navBar {
       display: flex;
       margin-left: auto;
+      font-size: 24px;
+      font-weight: bold;
 
-      .list-container {
-        display: flex;
+      a {
+        color: $secondary-color4;
+        text-decoration: none;
+        margin: 0 10px;
 
-        li {
-          font-size: 24px;
-          font-weight: bold;
-          margin-left: 15px;
-          list-style-type: none;
+        &:hover {
+          color: $secondary-color1;
+        }
 
-          a {
-            text-decoration: none;
-            color: $secondary-color4;
-
-            &:hover {
-              color: $secondary-color1;
-            }
-
-          }
-
+        &:active {
+          color: $Primary-color1;
         }
 
       }
@@ -160,8 +154,8 @@
     }
   }
 
-  
-  
+
+
   @media only screen and (min-width: 700px) {
     padding: 20px 30px;
     position: relative;
