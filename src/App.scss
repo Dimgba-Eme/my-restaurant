@@ -83,7 +83,11 @@
       a {
         color: $secondary-color4;
         text-decoration: none;
-        margin: 0 10px;
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
 
         &:hover {
           color: $secondary-color1;
@@ -431,4 +435,62 @@
     }
   }
 
+}
+
+.res-form {
+  padding: 40px 30px;
+
+  form {
+
+    .reservation {
+      margin-top: 20px;
+      align-items: center;
+
+      label {
+        padding-right: 10px;
+        font-weight: bold;
+
+        sup {
+          color: red;
+        }
+      }
+
+      input {
+        padding: 10px;
+      }
+
+      select {
+        padding: 10px;
+      }
+    }
+
+    .button {
+      background-color: $Primary-color2;
+      color: $secondary-color4;
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .res-form {
+    padding-left: 100px;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .res-form {
+    padding-left: 50px;
+    padding-top: 100px;
+
+    form {
+      display: flex;
+
+      .reservation {
+        margin-left: 20px;
+      }
+    }
+  }
 }

@@ -2,15 +2,15 @@ import React from 'react'
 
 function BookingForm() {
   return (
-    <>
-      <form className='res-form'>
+    <div className='res-form'>
+      <form method='POST'>
         <div className='reservation'>
-          <label htmlFor='res-date'>Choose a date</label>
+          <label htmlFor='res-date'>Choose a date:<sup>*</sup></label>
           <input type='date' id='res-date' />
         </div>
 
-         <div className='reservation'>
-          <label htmlFor='res-time'>Choose time</label>
+        <div className='reservation'>
+          <label htmlFor='res-time'>Choose time:<sup>*</sup></label>
           <select id='res-time'>
             <option>17:00</option>
             <option>18:00</option>
@@ -19,28 +19,28 @@ function BookingForm() {
             <option>21:00</option>
             <option>22:00</option>
           </select>
-         </div>
+        </div>
 
-          <div className='reservation'>
-          <label htmlFor='guests'>Number of guests</label>
+        <div className='reservation'>
+          <label htmlFor='guests'>Number of guests:<sup>*</sup></label>
           <input type='number' id='guests' placeholder='1' min='1' max='10' />
-          </div>
+        </div>
 
-          <div className='reservation'>
-          <label htmlFor='occasion'>Occasion</label>
+        <div className='reservation'>
+          <label htmlFor='occasion'>Occasion:<sup>*</sup></label>
           <select id='occasion'>
             <option>Birthday</option>
             <option>Anniversary</option>
-            <option></option>
+            <option>Engagement</option>
           </select>
-          </div>
+        </div>
 
-         <div className='reservation'>
-          <input type='submit' value='Make your reservation' />
-         </div>
+        <div className='reservation'>
+          <input type='submit' value='Make your reservation' className='button' />
+        </div>
 
       </form>
-    </>
+    </div>
   )
 }
 
