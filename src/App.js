@@ -1,11 +1,19 @@
 import './App.scss';
+import { Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
+import Reservations from './pages/Reservations';
 
 
 function App() {
   return (
     <>
-      <Home />
+    <Routes>
+     <Route path='/' element={<Home />} /> 
+     <Route path='/reservations' element={<Reservations />} /> 
+      
+
+    </Routes>
+      
       
     </>
   );
