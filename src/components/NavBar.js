@@ -5,13 +5,14 @@ function NavBar() {
     return (
         <>
             <nav className='navBar'>
-                <ul className='list-container'>
-                    <NavLink to='/'>Home</NavLink>
-
-                    <NavLink to='/reservations'>Reservations</NavLink>
-
-                </ul>
+                <NavLink to='/'>Home</NavLink>
+                <NavLink to='/about'>About</NavLink>
+                <NavLink to='/menu'>Menu</NavLink>
+                <NavLink to='/reservations'>Reservations</NavLink>
+                <NavLink to='/order-online'>Order online</NavLink>
+                <NavLink to='/login'>Login</NavLink>
             </nav>
+
         </>
     )
 }
