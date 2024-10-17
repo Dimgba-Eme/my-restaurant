@@ -1,16 +1,27 @@
 import React from 'react'
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 
 function BookingForm() {
-  const [date, setDate] = useState('');
-  const [time, setTime] = useState('');
-  const [guests, setGuests] = useState('');
-  const [occasion, setOccasion] = useState('');
-   
+  const [date, setDate] = useState();
+  const [time, setTime] = useState();
+  const [guests, setGuests] = useState();
+  const [occasion, setOccasion] = useState();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Table reserved");
   }
+
+  const fetchData =() => {
+    fetch('https://www.randomuser.me')
+    .then(response => (response.JSON()))
+    .then(data => setDate(data))
+    .catch(error => (console.log(error)));
+  }
+
+  useEffect(() => {
+    fetchData();
+  });
 
   useEffect(() => {
     document.title = 'Little Lemon | Reservation';
@@ -19,7 +30,7 @@ function BookingForm() {
   return (
     <div className='res-form'>
       <h1>Reserve a table</h1>
-      <form onSubmit={handleSubmit} method='POST'>
+      <form onSubmit={handleSubmit}>
         <div className='reservation'>
           <label htmlFor='res-date'>Choose a date:<sup>*</sup></label>
           <input type='date' id='res-date' value={date} onChange={e => setDate(e.target.value)} />
