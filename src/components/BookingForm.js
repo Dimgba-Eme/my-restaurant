@@ -1,8 +1,10 @@
 import React from 'react'
+import { useState, useEffect} from 'react'
 
 function BookingForm() {
   return (
     <div className='res-form'>
+      <h1>Reserve a table</h1>
       <form method='POST'>
         <div className='reservation'>
           <label htmlFor='res-date'>Choose a date:<sup>*</sup></label>
