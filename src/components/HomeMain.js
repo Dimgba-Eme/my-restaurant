@@ -5,7 +5,10 @@ import Bruschetta from '../assets/images/Bruchetta.jpg'
 import LemonD from '../assets/images/lemon dessert.jpg'
 import Bicycle from '../assets/images/bicycle.jpg'
 
+import { useNavigate } from 'react-router-dom'
+
 function HomeMain() {
+  const navigate = useNavigate();
   return (
     <>
       <div className='section-container'>
@@ -20,7 +23,7 @@ function HomeMain() {
                 focused on traditional
                 recipes served with a modern
                 twist. </p>
-              <button>Reserve a table</button>
+              <button onClick={() => navigate("/reservations")}>Reserve a table</button>
             </div>
             <img src={HeroImage} className='hero-image' alt='Hero pic' />
           </div>
@@ -85,7 +88,7 @@ function HomeMain() {
       <section className='desktop-specials'>
         <div className='alert'>
           <h1>This weeks specials</h1>
-          <button>Online Menu</button>
+          <button onClick={() => navigate('/menu')}>Online Menu</button>
         </div>
 
         <div className='desktop-menu-container'>

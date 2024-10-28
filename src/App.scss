@@ -87,15 +87,11 @@
         &:not(:last-child) {
           margin-right: 20px;
         }
-
-
+       
         &:hover {
           color: $secondary-color1;
         }
-
-        &:active {
-          color: $Primary-color1;
-        }
+        
 
       }
     }
@@ -143,6 +139,7 @@
         color: $secondary-color4;
         font-weight: bold;
         border: 0;
+        cursor: pointer;
 
       }
 
@@ -375,6 +372,7 @@
         border-radius: 15px;
         font-weight: bolder;
         margin-left: auto;
+        cursor: pointer;
       }
     }
 
