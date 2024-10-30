@@ -7,29 +7,29 @@
 }
 
 .page-header {
-  
 
-    padding: 0 10px;
-    
-    .logo-container {
-      .logo {
-        margin-left: 55px;
-        width: 190px;
-        transform: translateY(15px);
-      }
-      
-      .basket {
-        width: 30px;
-        margin-left: 30px;
-        
-      }
+
+  padding: 0 10px;
+
+  .logo-container {
+    .logo {
+      margin-left: 55px;
+      width: 190px;
+      transform: translateY(15px);
     }
-    
-    .hamburger-menu {
+
+    .basket {
       width: 30px;
-      transform: translateY(-20px);
+      margin-left: 30px;
+
     }
-  
+  }
+
+  .hamburger-menu {
+    width: 30px;
+    transform: translateY(-20px);
+  }
+
 
   nav {
     display: none;
@@ -100,25 +100,25 @@
     display: flex;
     align-items: center;
     padding: 30px 70px;
-    
+
     .logo-container {
-      
+
       .logo {
         width: 300px;
         margin-left: 0;
         transform: translateY(0);
-        
+
       }
-      
+
       .basket {
         display: none;
       }
     }
-    
+
     .hamburger-menu {
       display: none;
     }
-    
+
     nav {
       display: flex;
       margin-left: 100px;
@@ -403,7 +403,10 @@
 
   @media only screen and (min-width:1000px) {
     display: block;
-    padding: 150px 70px;
+    padding-top: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 50px;
 
     .alert {
       display: flex;
@@ -539,6 +542,72 @@
 
       .reservation {
         margin-left: 20px;
+      }
+    }
+  }
+}
+
+.testimonials-wrapper {
+  padding-bottom: 20px;
+  background-color: $secondary-color3;
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .testimonials-container {
+    text-align: center;
+
+    img {
+      width: 20%;
+      border-radius: 50%;
+    }
+
+    p {
+      padding: 0 40px;
+      font-size: 12px;
+    }
+
+    .users {
+      margin-top: 20px;
+      background-color: white;
+      margin: 20px;
+      padding: 20px 0;
+    }
+  }
+
+
+  @media only screen and (min-width: 700px) {
+
+    
+    h1 {
+      font-size: 40px;
+    }
+    
+    .testimonials-container {
+      padding-bottom: 20px;
+      display: flex;
+    }
+
+    .users {
+      p {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .testimonials-container {
+      padding-left: 70px;
+      padding-right: 50px;
+
+    }
+    .users {
+      p {
+        padding: 0 70px;
       }
     }
   }

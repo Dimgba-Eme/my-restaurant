@@ -7,27 +7,27 @@ import User3 from '../assets/images/user-3.jpg'
 function Testimonials() {
     return (
         <>
-            <section>
+            <section className='testimonials-wrapper'>
                 <h1>Testimonials</h1>
-                <div>
+                <div className='testimonials-container'>
 
-                    <div>
+                    <div className='users'>
                         <img src={User1} alt='user-1' />
-                        <h2>John Doe</h2>
+                        <h4>John Doe</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Excepturi tenetur obcaec,
                             praesentiumcumque, autem similique de.</p>
                     </div>
-                    <div>
+                    <div className='users'>
                         <img src={User2} alt='user-2' />
-                        <h2>Laura Smith</h2>
+                        <h4>Laura Smith</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Excepturi tenetur obcaec,
                             praesentiumcumque, autem similique de.</p>
                     </div>
-                    <div>
+                    <div className='users'>
                         <img src={User3} alt='user-3' />
-                        <h2>Annabel Donald</h2>
+                        <h4>Annabel Donald</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur
                             adipisicing elit. Excepturi tenetur obcaec,
                             praesentiumcumque, autem similique de.</p>
