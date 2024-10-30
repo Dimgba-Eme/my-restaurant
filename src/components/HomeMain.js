@@ -5,6 +5,8 @@ import Bruschetta from '../assets/images/Bruchetta.jpg'
 import LemonD from '../assets/images/lemon dessert.jpg'
 import Bicycle from '../assets/images/bicycle.jpg'
 
+import Testimonials from './Testimonials'
+
 import { useNavigate } from 'react-router-dom'
 
 function HomeMain() {
@@ -142,7 +144,7 @@ function HomeMain() {
       </section>
 
 
-
+     <Testimonials />
 
     </>
   )
