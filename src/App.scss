@@ -580,11 +580,11 @@
 
   @media only screen and (min-width: 700px) {
 
-    
+
     h1 {
       font-size: 40px;
     }
-    
+
     .testimonials-container {
       padding-bottom: 20px;
       display: flex;
@@ -605,9 +605,97 @@
       padding-right: 50px;
 
     }
+
     .users {
       p {
         padding: 0 70px;
+      }
+    }
+  }
+}
+
+.owners-container {
+  padding: 20px 10px;
+
+  .owners-description {
+    h1 {
+      font-family: serif;
+      font-weight: bold;
+      font-size: 35px;
+      color: $secondary-color4;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-family: serif;
+      color: $secondary-color4;
+
+    }
+
+    p {
+      margin-right: 30px;
+      font-size: 15px;
+      margin-top: 10px;
+      color: $secondary-color4;
+      padding-bottom: 20px;
+
+    }
+  }
+
+  .owners-pics {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .owners-container {
+    padding-right: 20px;
+    display: flex;
+
+    .owners-description {
+      padding: 0 10px;
+    }
+
+    .owners-pics {
+      min-width: 300px;
+      max-width: 300px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .owners-container {
+    .owners-description {
+      padding: 0 70px;
+
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+      
+      p {
+        padding-right: 200px;
+        font-size: 24px;
+
+      }
+    }
+
+    .owners-pics {
+      min-width: 400px;
+      max-width: 400px;
+      margin-right: 50px;
+
+      .owners-2 {
+        position: absolute;
+        min-width: 400px;
+        max-width: 400px;
+        transform: translate(-650px, 50px);
       }
     }
   }

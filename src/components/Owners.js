@@ -1,5 +1,8 @@
 import React from 'react'
 
+import Owners1 from '../assets/images/Mario and Adrian A.jpg'
+import Owners2 from '../assets/images/Mario and Adrian b.jpg'
+
 function Owners() {
     return (
         <>
@@ -14,6 +17,12 @@ function Owners() {
                         fugit explicabo aspernatur qui sequi sint consecteturnam expedita architecto consequatur.
                     </p>
                 </div>
+
+                <div className='owners-pics'>
+                <img src={Owners1} alt='owners-1' />
+                <img src={Owners2} alt='owners-2' className='owners-2' />
+                </div>
+
             </section>
         </>
     )
