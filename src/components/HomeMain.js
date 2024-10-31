@@ -7,6 +7,7 @@ import Bicycle from '../assets/images/bicycle.jpg'
 
 import Testimonials from './Testimonials'
 import Owners from './Owners'
+import Footer from './Footer'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -148,6 +149,8 @@ function HomeMain() {
      <Testimonials />
 
      <Owners />
+
+     <Footer />
 
     </>
   )

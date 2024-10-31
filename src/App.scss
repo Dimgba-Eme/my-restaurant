@@ -678,7 +678,7 @@
       h2 {
         font-size: 30px;
       }
-      
+
       p {
         padding-right: 200px;
         font-size: 24px;
@@ -697,6 +697,16 @@
         max-width: 400px;
         transform: translate(-650px, 50px);
       }
+    }
+  }
+}
+
+.footer-wrapper {
+  background-color: $Primary-color2;
+
+  .footer-container {
+    img {
+      width: 100%;
     }
   }
 }
