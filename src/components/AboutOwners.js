@@ -3,7 +3,7 @@ import React from 'react'
 import Owners1 from '../assets/images/Mario and Adrian A.jpg'
 import Owners2 from '../assets/images/Mario and Adrian b.jpg'
 
-function Owners() {
+function AboutOwners() {
     return (
         <>
             <section className='owners-container'>
@@ -28,4 +28,4 @@ function Owners() {
     )
 }
 
-export default Owners
+export default AboutOwners
