@@ -1,0 +1,40 @@
+[33m23e5129[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31mmy-restaurant/master[m[33m)[m Created AboutMain component for the About page
+[33mb0752d8[m Added more components to decongest the HomeMain component
+[33mc4ed7c0[m Done with the Footer component
+[33mdef4196[m Styled and aligned the contents in the Footer component
+[33m22cb931[m Resizing the Footer logo
+[33m130c423[m Added the Footer Logo and changed the background color to orange
+[33m85a7e02[m Done with the Owners section by aligning all items
+[33m3caee1a[m Created Owners Component
+[33md6d4ada[m Done with the testimonial section by styling and aligning
+[33m3d87006[m Added three users in the testimonial section
+[33m59bf72a[m Created Testimonial component
+[33maad8ae6[m Made the hamburger menu responsive
+[33m84aaf02[m Linked the cta buttons to their respective pages
+[33m88537e6[m included the fetch API
+[33m6543fec[m implemented useState and useEffect in the booking form
+[33m3fb28df[m imported useState and useEffect hooks
+[33med37557[m Styled amd aligned the booking form
+[33m6b2fa4f[m Added Occasion and Request button
+[33m65eea87[m Added number of guests request to the Booking Form
+[33m7f5c453[m Added date and time to the Booking Form
+[33m9d643f4[m Added page Header to all the pages with the navigation bar
+[33mb5a5dc5[m Setup BrowserRouter, Routes, Route and NavLink
+[33m062970f[m Added the BookingForm component
+[33mfcf1cf7[m Done with the highlights section
+[33mc62e132[m Updated the desktop highlights section with images and descriptions
+[33m12769f7[m Added images of dishes in the menu section
+[33mbdbaa72[m Done with the hero section
+[33mfc9f0e4[m Positioned and styled all the hero section elements
+[33m69d5523[m Added the primary background color in the hero section
+[33m52b7a48[m Done with the Header component
+[33m14688d5[m Created color variables in a separate component
+[33m34cc96f[m Made the page header responsive on all devices
+[33mc141f29[m Styled and aligned header contents
+[33m4f3aeb5[m imported the brand logo
+[33m99a318c[m Updated Header and NavBar components
+[33m9618fe0[m Added assets folder
+[33m1fcede5[m Added extra components for the pages contents
+[33m479aaf4[m Added site pages and imported all inside App.js
+[33mc48e190[m Linked to my GitHub repository
+[33mc7ee7b2[m Added git init for tracking
