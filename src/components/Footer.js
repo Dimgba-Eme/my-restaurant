@@ -1,11 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import FooterLogo from '../assets/images/footer_image.png'
 
 import FB from '../assets/images/icon-facebook.svg'
 import INSTA from '../assets/images/icon-instagram.svg'
 import TUBE from '../assets/images/icon-youtube.svg'
-import { useNavigate } from 'react-router-dom'
 
 function Footer() {
     const navigate = useNavigate();
