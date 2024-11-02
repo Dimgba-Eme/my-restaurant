@@ -703,10 +703,55 @@
 
 .footer-wrapper {
   background-color: $Primary-color2;
+  padding: 20px 10px;
 
   .footer-container {
+    h4 {
+      margin-top: 20px;
+    }
     img {
-      width: 100%;
+      width: 20%;
+    }
+
+    .socials-links {
+      span {
+        img {
+          width: 25px;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .copy {
+    text-align: center;
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .footer-wrapper {
+    padding: 30px 20px;
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-wrapper {
+    padding: 70px;
+
+    .footer-container {
+      img {
+        width: 10%;
+      }
+
+      .navigation {
+        cursor: pointer;
+      }
     }
   }
 }
