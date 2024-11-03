@@ -14,11 +14,11 @@ function LoginForm() {
     const [password, setPassword] = useState({
         value: '',
         isTouched: false,
-});
+    });
 
     const getFormIsValid = () => {
         return (
-          validateEmail(email) && password.value.length >= 8
+            validateEmail(email) && password.value.length >= 8
         );
     };
 
@@ -38,7 +38,7 @@ function LoginForm() {
     }
 
     useEffect(() => {
-        document.tltle = 'Little Lemon | Login';
+        document.title = 'Little Lemon | Login';
     }, []);
 
     return (
@@ -48,13 +48,13 @@ function LoginForm() {
                     <h1>Login</h1>
                     <label htmlFor='email'>Email <sup>*</sup></label>
                     <br />
-                    <input type='email' placeholder='Enter your email' id='email' value={email} onChange={e => setEmail(e.target.value) } />
+                    <input type='email' placeholder='Enter your email' id='email' value={email} onChange={e => setEmail(e.target.value)} />
                     <br />
 
                     <label htmlFor='pwd'>Password <sup>*</sup></label>
                     <br />
-                    <input type='password' placeholder='Enter your password' id='pwd' value={password.value} onChange={e => setPassword({ ...password, value: e.target.value })} onBlur={() => setPassword({...password, isTouched: true})} />
-                    {password.value.length < 8 && password.isTouched ? (passwordErrorMessage) : null}
+                    <input type='password' placeholder='Enter your password' id='pwd' value={password.value} onChange={e => setPassword({ ...password, value: e.target.value })} onBlur={() => setPassword({ ...password, isTouched: true })} />
+                    {password.value.length < 8 && password.isTouched ? passwordErrorMessage : null}
                     <br />
                     <br />
 
