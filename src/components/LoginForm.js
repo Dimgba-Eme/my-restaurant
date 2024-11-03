@@ -9,7 +9,6 @@ const passwordErrorMessage = () => {
 }
 
 function LoginForm() {
-    // const [user, setUser] = useState([]);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState({
         value: '',
@@ -25,7 +24,7 @@ function LoginForm() {
     const fetchData = () => {
         fetch('https://randomuser.me/api/?results=1')
             .then((response) => response.json())
-            .then((data) => (data))
+            .then((data) => console.log(data))
             .catch((error) => console.log(error));
     };
 
@@ -33,6 +32,9 @@ function LoginForm() {
         fetchData();
     }, []);
 
+    useEffect(() => {
+        document.title = 'Little Lemon | Login';
+    }, []);
 
     const clearForm = (e) => {
         setEmail("");
@@ -48,10 +50,6 @@ function LoginForm() {
         clearForm();
         alert('Logged In');
     }
-
-    useEffect(() => {
-        document.title = 'Little Lemon | Login';
-    }, []);
 
     return (
         <div className='login-form'>
