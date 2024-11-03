@@ -784,7 +784,7 @@
 
   .about-pics {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, auto);
     gap: 10px;
     padding-top: 20px;
     img {
@@ -793,3 +793,21 @@
   }
 }
 
+@media only screen and (min-width: 700px) {
+  .about-wrapper {
+    padding: 20px 30px;
+    .about-pics {
+      gap: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .about-wrapper {
+    padding: 30px 70px;
+
+    p {
+      padding-right: 600px;
+    }
+  }
+}

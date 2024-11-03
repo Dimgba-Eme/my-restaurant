@@ -16,6 +16,11 @@ function AboutMain() {
                     praesentiumcumque, autem similique de.
                     autem similique deleniti a magnam commodi,
                     fugit explicabo aspernatur qui sequi sint consecteturnam expedita architecto consequatur.
+                    Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Excepturi tenetur obcaec,
+                    praesentiumcumque, autem similique de.
+                    autem similique deleniti a magnam commodi,
+                    fugit explicabo aspernatur qui sequi sint consecteturnam expedita architecto consequatur.
                 </p>
 
                 <div className='about-pics'>
