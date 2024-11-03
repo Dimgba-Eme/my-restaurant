@@ -9,7 +9,7 @@ const passwordErrorMessage = () => {
 }
 
 function LoginForm() {
-
+    // const [user, setUser] = useState([]);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState({
         value: '',
@@ -21,6 +21,18 @@ function LoginForm() {
             validateEmail(email) && password.value.length >= 8
         );
     };
+
+    const fetchData = () => {
+        fetch('https://randomuser.me/api/?results=1')
+            .then((response) => response.json())
+            .then((data) => (data))
+            .catch((error) => console.log(error));
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
 
     const clearForm = (e) => {
         setEmail("");
