@@ -14,6 +14,10 @@ function LoginForm() {
             <label htmlFor='pwd'>Password <sup>*</sup></label>
             <br />
             <input type='password' placeholder='Enter your password' id='pwd' />
+            <br />
+            <br />
+
+            <button>SEND</button>
         </fieldset>
     </form> 
     </>
