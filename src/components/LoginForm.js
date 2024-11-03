@@ -1,27 +1,68 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
+import { validateEmail } from './Utils';
+
+const passwordErrorMessage = () => {
+    return (
+        <p>The password should not have less than 8 characters</p>
+    );
+}
 
 function LoginForm() {
-  return (
-    <>
-     <form>
-        <fieldset>
-            <h1>Login</h1>
-            <label htmlFor='email'>Email <sup>*</sup></label>
-            <br />
-            <input type='email' placeholder='Enter your email' id='email' />
-            <br />
 
-            <label htmlFor='pwd'>Password <sup>*</sup></label>
-            <br />
-            <input type='password' placeholder='Enter your password' id='pwd' />
-            <br />
-            <br />
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState({
+        value: '',
+        isTouched: false,
+});
 
-            <button>SEND</button>
-        </fieldset>
-    </form> 
-    </>
-  )
+    const getFormIsValid = () => {
+        return (
+          validateEmail(email) && password.value.length >= 8
+        );
+    };
+
+    const clearForm = (e) => {
+        setEmail("");
+        setPassword({
+            value: '',
+            isTouched: false,
+        });
+    };
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        clearForm();
+        alert('Logged In');
+    }
+
+    useEffect(() => {
+        document.tltle = 'Little Lemon | Login';
+    }, []);
+
+    return (
+        <div className='login-form'>
+            <form onSubmit={handleSubmit}>
+                <fieldset>
+                    <h1>Login</h1>
+                    <label htmlFor='email'>Email <sup>*</sup></label>
+                    <br />
+                    <input type='email' placeholder='Enter your email' id='email' value={email} onChange={e => setEmail(e.target.value) } />
+                    <br />
+
+                    <label htmlFor='pwd'>Password <sup>*</sup></label>
+                    <br />
+                    <input type='password' placeholder='Enter your password' id='pwd' value={password.value} onChange={e => setPassword({ ...password, value: e.target.value })} onBlur={() => setPassword({...password, isTouched: true})} />
+                    {password.value.length < 8 && password.isTouched ? (passwordErrorMessage) : null}
+                    <br />
+                    <br />
+
+                    <button type='submit' disabled={!getFormIsValid()}>SEND</button>
+                </fieldset>
+            </form>
+        </div>
+    )
 }
 
 export default LoginForm

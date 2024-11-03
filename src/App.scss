@@ -709,6 +709,7 @@
     h4 {
       margin-top: 20px;
     }
+
     img {
       width: 20%;
     }
@@ -733,6 +734,7 @@
 @media only screen and (min-width: 700px) {
   .footer-wrapper {
     padding: 30px 20px;
+
     .footer-container {
       display: flex;
       justify-content: space-between;
@@ -787,6 +789,7 @@
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     padding-top: 20px;
+
     img {
       width: 100%;
     }
@@ -796,6 +799,7 @@
 @media only screen and (min-width: 700px) {
   .about-wrapper {
     padding: 20px 30px;
+
     .about-pics {
       gap: 20px;
     }
@@ -812,10 +816,11 @@
   }
 }
 
-form {
+.login-form {
   background-color: $Primary-color1;
   color: $secondary-color3;
   padding: 20px 10px;
+
   fieldset {
     padding: 20px 10px;
 
@@ -842,6 +847,26 @@ form {
       background-color: $Primary-color2;
       border: 0;
       font-weight: bolder;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .login-form {
+    padding: 20px;
+
+    fieldset {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .login-form {
+    padding: 50px 70px;
+
+    fieldset {
+      width: 50%;
     }
   }
 }
